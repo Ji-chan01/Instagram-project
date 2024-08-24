@@ -1,0 +1,270 @@
+* {
+  font-family: Arial;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 25px;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.pageFooter {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  row-gap: 20px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 15px;
+  row-gap: 8px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+li, .english-language, .copyright {
+  font-size: 12px;
+  color: rgb(148, 148, 148);
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+  height: 635px;
+}
+
+.left {
+  position: relative;
+  background-image: url('/images/background/home-phones.png');
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 430px;
+}
+
+.screenshot {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  animation: animate-pictures 20s infinite;
+  opacity: 0;
+}
+
+.left img:nth-child(1) {
+  animation-delay: 0s;
+}
+.left img:nth-child(2) {
+  animation-delay: 5s;
+}
+.left img:nth-child(3) {
+  animation-delay: 10s;
+}
+.left img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+@keyframes animate-pictures {
+  0% {opacity: 1;}
+  25%, 75% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(189, 189, 189, 0.507);
+  width: 330px;
+  height: 405px;
+  border-radius: 3px;
+}
+
+.insta-logo {
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+input {
+  
+  padding: 15px 9px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(189, 189, 189, 0.418);
+  background-color: rgb(250, 250, 250);
+  width: 224px;
+  margin-bottom: 6px;
+}
+
+input:focus {
+  padding: 10px;
+}
+
+.userbox {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.418);
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: 1px solid rgb(161, 161, 161);
+  border: none;
+}
+
+input.filled + label {
+  top: 6px;
+  left: 10px;
+  font-size: 11px;
+}
+
+input.filled {
+  padding: 20px 10px 5px;
+  font-size: 12px;
+}
+
+.login-button {
+  background-color: rgba(0, 148, 246, 0.726);
+  color: white;
+  font-weight: 700;
+  border: none;
+  width: 76%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.separator {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  width: 75%;
+  margin: 30px 0;
+  position: relative;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  bottom: -8px;
+  background-color: white;
+  width: 70px;
+  font-size: 12px;
+  font-weight: 550;
+  color: rgb(128, 128, 128);
+}
+
+.facebook-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 7px;
+  margin-bottom: 20px;
+}
+
+.facebook-logo {
+  width: 23px;
+}
+
+.login-fb-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #385185;
+}
+
+.forgot-pass {
+  font-size: 12px;
+  color: rgba(0, 55, 107, 0.945);
+}
+
+.no-account-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(189, 189, 189, 0.507);
+  width: 290px;
+  border-radius: 3px;
+}
+
+.no-account {
+  font-size: 14px;
+}
+
+.sign-up {
+  color: rgba(0, 148, 246, 0.726);
+  font-weight: 700;
+}
+
+.get-app {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  justify-content: center;
+}
+
+.google-play {
+  width: 130px;
+}
+
+.microsoft {
+  width: 107px;
+}
+
+.additional-settings-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 875px) {
+  .left {
+    display: none;
+  }
+}
